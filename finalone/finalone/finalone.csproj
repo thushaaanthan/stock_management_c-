@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{503BFBE2-F662-4D80-8EA5-879A63B5C054}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>finalone</RootNamespace>
+    <AssemblyName>finalone</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="Microsoft.VisualBasic.PowerPacks.Vs, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="bill.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="bill.Designer.cs">
+      <DependentUpon>bill.cs</DependentUpon>
+    </Compile>
+    <Compile Include="billing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="billing.Designer.cs">
+      <DependentUpon>billing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="changepass.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="changepass.Designer.cs">
+      <DependentUpon>changepass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="changepasscon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="changepasscon.Designer.cs">
+      <DependentUpon>changepasscon.cs</DependentUpon>
+    </Compile>
+    <Compile Include="changepassconw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="changepassconw.Designer.cs">
+      <DependentUpon>changepassconw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="changepassw.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="changepassw.Designer.cs">
+      <DependentUpon>changepassw.cs</DependentUpon>
+    </Compile>
+    <Compile Include="first.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="first.Designer.cs">
+      <DependentUpon>first.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="login.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>login.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="loginA.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginA.Designer.cs">
+      <DependentUpon>loginA.cs</DependentUpon>
+    </Compile>
+    <Compile Include="loginW.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="loginW.Designer.cs">
+      <DependentUpon>loginW.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="newp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="newp.Designer.cs">
+      <DependentUpon>newp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="print.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="print.Designer.cs">
+      <DependentUpon>print.cs</DependentUpon>
+    </Compile>
+    <Compile Include="printing.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="printing.Designer.cs">
+      <DependentUpon>printing.cs</DependentUpon>
+    </Compile>
+    <Compile Include="productDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>productDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="summary.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="summary.Designer.cs">
+      <DependentUpon>summary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="update.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="update.Designer.cs">
+      <DependentUpon>update.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="bill.resx">
+      <DependentUpon>bill.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="billing.resx">
+      <DependentUpon>billing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changepass.resx">
+      <DependentUpon>changepass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changepasscon.resx">
+      <DependentUpon>changepasscon.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changepassconw.resx">
+      <DependentUpon>changepassconw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="changepassw.resx">
+      <DependentUpon>changepassw.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="first.resx">
+      <DependentUpon>first.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginA.resx">
+      <DependentUpon>loginA.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="loginW.resx">
+      <DependentUpon>loginW.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="newp.resx">
+      <DependentUpon>newp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="print.resx">
+      <DependentUpon>print.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="printing.resx">
+      <DependentUpon>printing.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="summary.resx">
+      <DependentUpon>summary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="update.resx">
+      <DependentUpon>update.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="login.xsc">
+      <DependentUpon>login.xsd</DependentUpon>
+    </None>
+    <None Include="login.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>login.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="login.xss">
+      <DependentUpon>login.xsd</DependentUpon>
+    </None>
+    <None Include="productDataSet.xsc">
+      <DependentUpon>productDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="productDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>productDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="productDataSet.xss">
+      <DependentUpon>productDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3D_Colors.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mixed_paint_colors-wallpaper-1366x768.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\thumb3_mixed_colors_5.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\vista-wallpaper-background-cool-photo-color-87175.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3ff3e35d_72399c8c2d101faa4130e1c5c832fcba.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mixed_colors_10_1920x1200.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3D_Colors1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\color004.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\mixed_colors_10_1920x12001.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\color0041.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\color0042.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3ff3e35d_72399c8c2d101faa4130e1c5c832fcba1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\8674747-Abstract-watercolor-hand-painted-background-Stock-Photo-watercolor-paint-splatter.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
